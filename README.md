@@ -2,10 +2,6 @@
 
 This project is ui template for web projects based on bootstrap and angular-seed.
 
-```
-https://github.com/angular/angular-seed.git
-```
-
 For guide, please visit angular-seed website to understand directory structures and
 how to install tools and dependencies and how to run test and web server.
 
@@ -41,7 +37,9 @@ how to install tools and dependencies and how to run test and web server.
 
 ## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
+For more information
+ on Angular seed please check out https://github.com/angular/angular-seed
+ on AngularJS please check out http://angularjs.org/
 
 [angular-seed]: https://github.com/angular/angular-seed
 [git]: http://git-scm.com/

@@ -1,6 +1,6 @@
 # angular-seed — the seed for AngularJS apps
 
-This project is a ui template for spike purpose with bootstrap and used angular-seed.
+This project is ui template for web projects based on bootstrap and angular-seed.
 
 ```
 https://github.com/angular/angular-seed.git

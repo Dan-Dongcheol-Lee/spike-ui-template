@@ -1,4 +1,4 @@
-# angular-seed — the seed for AngularJS apps
+# Spike on ui template for AngularJS spa apps
 
 This project is ui template for web projects based on bootstrap and angular-seed.
 

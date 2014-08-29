@@ -37,9 +37,9 @@ how to install tools and dependencies and how to run test and web server.
 
 ## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
 For more information on Angular seed please check out https://github.com/angular/angular-seed
 
+[angular-js]: http://angularjs.org/
 [angular-seed]: https://github.com/angular/angular-seed
 [git]: http://git-scm.com/
 [bower]: http://bower.io

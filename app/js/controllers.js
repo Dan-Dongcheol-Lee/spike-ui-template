@@ -3,9 +3,12 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
-
+  .controller('LoginCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.moveToChat = function() {
+      $location.path('/chat/' + $scope.userName);
+    }
   }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
-
+  .controller('ChatCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
+    console.log($routeParams.userName);
+    $scope.userName = $routeParams.userName;
   }]);

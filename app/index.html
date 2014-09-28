@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,7 +11,12 @@
     }
   </style>
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/sockjs/sockjs.js"></script>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!--<script src='http://cdn.html5quintus.com/v0.2.0/quintus-all.js'></script>-->
   <script>
     // include angular loader, which allows the files to load in any order
     //@@NG_LOADER_START@@
@@ -39,9 +44,8 @@
 
     // load all of the dependencies asynchronously.
     $script([
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/vertxbus/vertxbus.js',
       'js/app.js',
       'js/services.js',
       'js/controllers.js',
@@ -58,6 +62,8 @@
 <body ng-cloak>
   <ul class="menu">
     <li><a href="#/chat">Chat</a></li>
+    <li><a href="#/game">Game</a></li>
+    <li><a href="#/currency">Currency</a></li>
   </ul>
 
   <div ng-view></div>

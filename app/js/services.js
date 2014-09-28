@@ -2,8 +2,11 @@
 
 /* Services */
 
-
-// Demonstrate how to register services
-// In this case it is a simple value service.
-angular.module('myApp.services', []).
-  value('version', '0.1');
+angular.module('myApp.services', [])
+  .service('Chat', [function() {
+    return new vertx.EventBus('http://localhost:8080/messy-chat');
+  }])
+  .service('Currency', ['$resource', function($resource) {
+    return $resource('http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json');
+  }])
+  .value('version', '0.1');

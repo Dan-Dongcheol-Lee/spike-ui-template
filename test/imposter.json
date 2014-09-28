@@ -1,0 +1,38 @@
+{
+  "port": 8080,
+  "protocol": "http",
+  "stubs": [{
+    "responses": [{ "is": {
+        "statusCode": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+          "Access-Control-Allow-Headers": "X-Requested-With"
+        },
+        "body": "[{\"name\":\"Foo\",\"enteredDate\":\"2014-09-04T12:34:56Z\"},{\"name\":\"Bar\",\"enteredDate\":\"2014-09-05T12:34:56Z\"}]"
+      }
+    }],
+    "predicates": [{ "equals": {
+        "path": "/app/chats",
+        "method": "GET",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }]
+  },{
+    "responses": [{ "is": {
+        "statusCode": 200,
+        "body": "<!DOCTYPE HTML><script src=\"https://rawgit.com/jpillora/xdomain/gh-pages/dist/0.6/xdomain.js\" master=\"*\"></script>"
+      }
+    }],
+    "predicates": [{ "equals": {
+        "path": "/app/proxy.html",
+        "method": "GET",
+        "headers": {
+            "Content-Type": "text/html"
+        }
+      }
+    }]
+  }]
+}

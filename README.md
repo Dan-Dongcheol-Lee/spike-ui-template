@@ -34,6 +34,13 @@ how to install tools and dependencies and how to run test and web server.
         filtersSpec.js          --> specs for filters
         servicesSpec.js         --> specs for services
 
+## Mountebank
+
+npm install -g mountebank --production
+mb
+imposter.json
+curl -i -X POST -H 'Content-Type: application/json' -d@imposter.json http://localhost:2525/imposters
+curl -X DELETE http://localhost:2525/imposters/8080
 
 ## Contact
 

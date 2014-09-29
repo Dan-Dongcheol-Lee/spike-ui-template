@@ -1,20 +1,20 @@
 <div class="container">
-    <h3>{{userName}}. Welcome to chat room!</h3>
+    <h3><b>{{userName}}</b>. welcome to chat room</h3>
     <div class="form-group">
         <div class="col-md-9">
-            <p>Chat text<p>
-            <div id="chat-table" style="height:200px; overflow-y:auto;">
-                <table class="table table-bordered">
+            <h4>Chat text<h4>
+            <div id="chat-table" style="overflow-y:auto;" class="table-responsive">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <td>Name</td>
-                            <td width="60%">Message</td>
-                            <td>Sent date</td>
+                            <th>Name</th>
+                            <th width="60%">Message</th>
+                            <th>Sent date</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="message in messages">
-                            <td>{{message.userName}}</td>
+                        <tr ng-repeat="message in messages" ng-class="message.action">
+                            <td><b>{{message.userName}}</b></td>
                             <td>{{message.message}}</td>
                             <td>{{message.sentDate}}</td>
                         </tr>

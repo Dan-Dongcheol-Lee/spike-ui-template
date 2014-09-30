@@ -14,6 +14,7 @@
     "html5-boilerplate": "~4.3.0",
     "bootstrap": "~3.2.0",
     "jquery": "~2.1.1",
-    "sockjs": "0.3.4"
+    "sockjs": "0.3.4",
+    "vertxbus": "2.1RC3"
   }
 }

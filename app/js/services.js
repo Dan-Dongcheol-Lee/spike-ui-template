@@ -5,7 +5,7 @@
 angular.module('myApp.services', [])
   .service('Chat', ['$timeout', function($timeout) {
     var self = this;
-    self.bus = new vertx.EventBus('http://192.168.0.12:8080/messy-chat');
+    self.bus = new vertx.EventBus('http://localhost:8080/messy-chat');
     self.openHandler = undefined;
     self.closeHandler = undefined;
 

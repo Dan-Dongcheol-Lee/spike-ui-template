@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="bower_components/vis/dist/vis.css">
   <style>
     [ng-cloak] {
       display: none;
@@ -46,6 +47,8 @@
     $script([
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/vertxbus/vertxbus.js',
+      'bower_components/vis/dist/vis.js',
+      'bower_components/moment/moment.js',
       'js/app.js',
       'js/services.js',
       'js/controllers.js',
@@ -62,8 +65,8 @@
 <body ng-cloak>
   <ul class="menu">
     <li><a href="#/chat">Chat</a></li>
-    <li><a href="#/game">Game</a></li>
-    <li><a href="#/currency">Currency</a></li>
+    <li><a href="#/monitor">Monitor</a></li>
+    <!--<li><a href="#/game">Game</a></li>-->
   </ul>
 
   <div ng-view></div>

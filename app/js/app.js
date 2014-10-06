@@ -13,7 +13,7 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'LoginCtrl'});
   $routeProvider.when('/chat/:userName', {templateUrl: 'partials/chat.html', controller: 'ChatCtrl'});
-  $routeProvider.when('/game', {templateUrl: 'partials/game.html', controller: 'GameCtrl'});
-  $routeProvider.when('/currency', {templateUrl: 'partials/currency.html', controller: 'CurrencyCtrl'});
+  $routeProvider.when('/monitor', {templateUrl: 'partials/monitor.html', controller: 'MonitorCtrl'});
+//  $routeProvider.when('/game', {templateUrl: 'partials/game.html', controller: 'GameCtrl'});
   $routeProvider.otherwise({redirectTo: '/login'});
 }]);
